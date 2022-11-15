@@ -593,6 +593,10 @@
             </li>
           </ul>
         </div>
+        <b>Підпишіться на розсилку</b>
+        <label for="email">Імя</label>
+        <input type="email" name="email" id="email" autocomplete="email" required>
+
       </div>
     </footer>
     <!-- MODAL-WINDOW -->
@@ -607,13 +611,24 @@
     </div>
     <!-- SCRIPT -->
     <script src="./js/modal.js"></script>
-    <form>
+    <form autocomplete="off">
+      <b>Залиште свої дані, ми вам передзвонимо</b>
       <label for="name">Імя</label>
-      <input type="text" name="user-name" id="name">
+      <input type="text" name="user-name" id="name" autocomplete="name" required>
+
       <label for="tel">Телефон</label>
-      <input type="tel" name="tel" id="tel">
+      <input type="tel" name="tel" id="tel" autocomplete="tel" required>
+
       <label for="mail">Пошта</label>
-      <input type="email" name="mail" id="mail">
+      <input type="email" name="mail" id="mail" autocomplete="email" required>
+      
+      <button type="submit">Відправити</button>
+
+      <label for="comment">Коментар</label>
+      <textarea name="comment" id="comment" placeholder="Введіть текст"></textarea> ></textarea>
+
+      <input type="checkbox" name="policy" id="policy" required>
+      <label for="policy">Погоджуюся з розсилкою та приймаю <a class="" href="">Умови договору</a></label>
       
       <button type="submit">Відправити</button>
     </form>

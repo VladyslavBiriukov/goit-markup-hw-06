@@ -668,3 +668,6 @@ transition: color var(--animation-function), background-color var(--animation-fu
   background-color: transparent;
   cursor: pointer;
 }
+.modal-btn:hover {
+  fill: var(--accent-color);
+}
