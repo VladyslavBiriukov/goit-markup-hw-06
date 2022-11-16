@@ -491,13 +491,41 @@ transition: color var(--animation-function), background-color var(--animation-fu
   margin-bottom: 40px;
   margin-left: 70px;
 }
-.footer-links .title {
+.footer-titles {
   margin-bottom: 20px;
   color: var(--primary-white-color);
 
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.14;
+}
+/* --FORM-FOOTER-- */
+.footer-form-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  margin-left: 93px;
+}
+.footer-form {
+  display: flex;
+  gap: 12px;
+  
+}
+.footer-field {
+  width: 358px;
+  height: 50px;
+}
+.form-btn {
+  width: 200px;
+  height: 50px;
+}
+.footer-form-text {
+  margin-bottom: 20px;
+  color: var(--primary-white-color);
+  
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.14;
 }
 
 /* <<<PAGE PORTFOLIO>>> */
@@ -615,7 +643,7 @@ transition: color var(--animation-function), background-color var(--animation-fu
   
     color: var(--primary-white-color);
 }
-/* MODAL-WINDOW */
+/* --MODAL-WINDOW-- */
 .backdrop {
   position: fixed;
   top: 0;
