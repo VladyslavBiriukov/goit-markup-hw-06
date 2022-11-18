@@ -54,7 +54,7 @@ img {
   height: auto;
 }
 input:-webkit-autofill {
-  -webkit-text-fill-color: white;
+  -webkit-text-fill-color: ;
   transition: background-color 5000s ease-in-out 0s;
 }
 /* RESET - end */
@@ -519,14 +519,22 @@ transition: color var(--animation-function), background-color var(--animation-fu
   height: 50px;
   padding: 15px 16px;
 
+  outline: unset;
   background-color: transparent;
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+
+    transition: border-color var(--animation-function);
 }
+.footer-field:focus {
+  border-color: var(--accent-color);
+}
+
 .footer-field::placeholder {
   color: rgba(255, 255, 255, 0.6);
+  font-size: 16;
 }
 
 .form-btn {
@@ -548,7 +556,9 @@ transition: color var(--animation-function), background-color var(--animation-fu
   position: absolute;
   top: 13px;
   right: 28px;
-  
+}
+.footer-fill-color {
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.6);
 }
 
 /* <<<PAGE PORTFOLIO>>> */
@@ -691,8 +701,12 @@ transition: color var(--animation-function), background-color var(--animation-fu
   position: absolute;
   top: 50%;
   left: 50%;
+
+
   width: 528px;
   min-height: 581px;
+  padding: 40px;
+  
 
   background-color: white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -723,3 +737,146 @@ transition: color var(--animation-function), background-color var(--animation-fu
   fill: var(--accent-color);
 }
 /* modal-form */
+.modal-form-main-text {
+  display: block;
+  margin-bottom: 30px;
+  text-align: center;
+
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 0.95;
+}
+.modal-form-field {
+padding-left: 42px;
+padding-right: 42px;
+
+  width: 100%;
+  height: 40px;
+  
+  outline: unset;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border-color var(--animation-function);
+}
+.modal-form-field:focus {
+  border-color: var(--accent-color);
+    
+}
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px; 
+
+  transition: fill var(--animation-function);
+}
+.modal-form-field:focus + .modal-form-icon {
+  fill: var(--accent-color);
+}
+.modal-form-label {
+  display: block;
+  margin-bottom: 5px;
+
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+}
+.modal-form-group {
+  margin-bottom: 20px;
+}
+.modal-form-wrapper {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.modal-message {
+  display: block;
+  width: 100%;
+  height: 120px;
+
+  resize: none;
+  outline: unset;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+
+    transition: border-color var(--animation-function);
+
+    color: rgba(117, 117, 117, 0.5);
+    font-size: 12px;
+    line-height: 1.16;
+     letter-spacing: 0.01em;
+}
+.modal-message:focus {
+border-color: var(--accent-color);
+}
+
+.modal-agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  margin-bottom: 30px;
+}
+.modal-agreement-link {
+  color: var(--accent-color);
+  text-underline-offset: 2px;
+}
+.modal-agreement-label {
+  font-size: 14px;
+    line-height: 1.71;
+    user-select: none;
+}
+.modal-form-checkbox {
+  appearance: none;
+
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  border: 2px solid rgba(33, 33, 33, 1);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: 0;
+
+  transition: background-size var(--animation-function),
+  background-color var(--animation-function), 
+  outline-color var(--animation-function);
+}
+.modal-form-checkbox:checked {
+ outline-color: var(--accent-color);
+ background-color: var(--accent-color);
+ background-image: url(../images/icons/checked.svg);
+ background-size: 11px 8px;
+}
+
+.modal-form-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 52px;
+
+      color: var(--primary-white-color);
+      border: 0;
+      background-color: var(--accent-color);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+
+      font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+
+        transition: background-color var(--animation-function);
+}
+
+.modal-form-btn:hover,
+ .modal-form-btn:focus {
+  background-color: #188CE8;
+}
