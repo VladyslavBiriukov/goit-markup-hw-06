@@ -423,7 +423,7 @@ transition: color var(--animation-function);
   border: 1px solid #afb1b8;
   border-radius: 4px;
   
-transition: color var(--animation-function), background-color var(--animation-function);
+transition: color var(--animation-function), border-color var(--animation-function);
   
 }
 /* --PERMANENT CLIENTS ICON-- */
