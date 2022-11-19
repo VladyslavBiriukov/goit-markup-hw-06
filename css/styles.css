@@ -848,11 +848,16 @@ border-color: var(--accent-color);
   background-color var(--animation-function), 
   outline-color var(--animation-function);
 }
+
 .modal-form-checkbox:checked {
  outline-color: var(--accent-color);
  background-color: var(--accent-color);
  background-image: url(../images/icons/checked.svg);
  background-size: 11px 8px;
+}
+.modal-form-checkbox:focus {
+outline-color: var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 .modal-form-btn {
