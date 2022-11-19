@@ -857,7 +857,6 @@ border-color: var(--accent-color);
 }
 .modal-form-checkbox:focus {
 outline-color: var(--accent-color);
-  background-color: var(--accent-color);
 }
 
 .modal-form-btn {
